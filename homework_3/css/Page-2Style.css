@@ -1,0 +1,74 @@
+main {
+    margin: 0 auto;
+}
+table {
+    width: 80%;
+}
+td {
+    border: 1px solid gray;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.Group-Element{
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+.Group-Element__item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Element-Group-A {
+    text-align: left;
+}
+.Element-Group-B {
+    text-align: right;
+}
+.Element-info {
+    display: flex;
+    justify-content: space-around;
+}
+.Element-info {
+    display: flex;
+    justify-content: space-around;
+}
+.Element-info__name-simbol{
+    font-size: 24px;
+}
+.Element-info__name-ru {
+    font-size: 20px;
+}
+.Element-number {
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+.Molar-mass {
+    margin-top: -5px;
+    font-size: 15px;
+    text-align: left;
+}
+.Metal {
+    background-color: green;
+}
+.Not-Metal {
+    background-color: orange;
+}
+.inert-gas {
+    background-color: purple;
+}
+.Metal-with-Not-Metal {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, green 50%, orange 50%);
+}
+.Gallogen-with-Not-Metal {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red 50%, orange 50%);
+}
+.Gallogen {
+    background-color: red;
+}

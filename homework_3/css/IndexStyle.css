@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li:not(:last-child) {
+    margin-bottom: 30px;
+}
+a {
+    font-weight: 700;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: .5s ease-in-out;
+}
+a:hover {
+    display: inline-block;
+    transform: translateX(10px);
+    transition: .5s ease-in-out;
+}
