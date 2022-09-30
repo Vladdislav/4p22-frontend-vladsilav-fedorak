@@ -5,54 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Car Music</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                <a href="#">Car Music</a>
-            </div>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Оклейка автомобилей</a></li>
-                <li><a href="#">Детейлинг автомобилей</a></li>
-                <li><a href="#">Галерея работ</a></li>
-            </ul>
-            <div style="display:none;">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-        <div>
-            <div>
-                <h1>CAR MUSIC</h1>
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
-                <a href="#">Наши услуги</a>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="logo">
+                    <a class="logo__link" href="#">Car Music</a>
+                </div>
+                <ul class="menu__list">
+                    <li claas="menu__item">
+                        <a class="menu__link" href="#">Главная</a>
+                    </li>
+                    <li claas="menu__item">
+                        <a class="menu__link" href="#">Оклейка автомобилей</a>
+                    </li>
+                    <li claas="menu__item">
+                        <a class="menu__linkk" href="#">Детейлинг автомобилей</a>
+                    </li>
+                    <li claas="menu__item">
+                        <a class="menu__link" href="#">Галерея работ</a>
+                    </li>
+                </ul>
+                <div class="menu-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="header__content">
+                <div class="wrapper-info">
+                    <h1 class="title">CAR MUSIC</h1>
+                    <img src="sourse/rhombus.svg" alt="four rhombus">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
+                    <a href="#">Наши услуги</a>
+                </div>
             </div>
         </div>
-        <div>
-            <div>
-                <p>адрес:</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-            </div>
-            <div>
-                <p>телефон:</p>
-                <a href="phone:88121234567">8 (812) 123-45-67</a>
-                <a href="phone:89111234567">8-911-123-45-67</a>
-            </div>
-            <div>
-                <p>Режим работы:</p>
-                <p>пн-пт : 10:00 - 20:00</p>
-                <p>сб-вск : 12:00 - 20:00</p>
+        <div class="header__bottom">
+            <div class="wrapper-info">
+                <div class="wrapper-info__item">
+                    <p class="wrapper-info__title">адрес:</p>
+                    <p class="addres">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="wrapper-info__item">
+                    <p class="wrapper-info__title">телефон:</p>
+                    <a class="phone" href="phone:88121234567">8 (812) 123-45-67</a>
+                    <a class="phone" href="phone:89111234567">8-911-123-45-67</a>
+                </div>
+                <div class="wrapper-info__item">
+                    <p class="wrapper-info__title">Режим работы:</p>
+                    <p class="working-interval">пн-пт : 10:00 - 20:00</p>
+                    <p class="working-interval">сб-вск : 12:00 - 20:00</p>
+                </div>
             </div>
         </div>
     </header>
+
     <main>
-        <section>
+        <section class="achievements">
             <div>
                 <h2>наши достижения от кубка россии до чемпионатов мира</h2>
                 <img src="" alt="">
@@ -100,72 +116,95 @@
                 </div>
             </div>
         </section>
-        <section>
-            <button></button>
-            <article>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <a href="article-1.html">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a
-                                sit ante.</h3>
-                        </a>
+
+        <section class="services">
+            <div class="container">
+                <div class="services__content">
+                    <h2 class="sercives__title">Наши услуги</h2>
+                    <div class="services__switcher">
+                        <a href="#" class="switcher-btn switcher-btn--active">Оклейка</a>
+                        <a href="#" class="switcher-btn">Детейлинг</a>
+                    </div>
+                    <div class="servises__card">
+                        <div class="card">
+                            <div class="card__content">
+                                <img class="card__img" src="sourse/protective-films.svg" alt="protective films">
+                                <h3 class="card__title">Защитные пленки</h3>
+                                <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+                                    ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                            </div>
+                            <a href="#" class="card__btn btn">Подробнее</a>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img class="card__img" src="sourse/color-fimls.svg" alt="color fimls">
+                                <h3 class="card__title">Цветные пленки</h3>
+                                <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+                                    ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                            </div>
+                            <a href="#" class="card__btn btn">Подробнее</a>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img class="card__img" src="sourse/design.svg" alt="design">
+                                <h3 class="card__title">Дизайн</h3>
+                                <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+                                    ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                            </div>
+                            <a href="#" class="card__btn btn">Подробнее</a>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img class="card__img" src="sourse/salon-pasting.svg" alt="salon-pasting">
+                                <h3 class="card__title">Оклейка салона</h3>
+                                <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+                                    ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                            </div>
+                            <a href="#" class="card__btn btn">Подробнее</a>
+                        </div>
                     </div>
                 </div>
-
-            </article>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <a href="article-2.html">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit
-                            ante.</h3>
-                    </a>
-                </div>
-            </article>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <a href="article-3.html">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit
-                            ante.</h3>
-                    </a>
-                </div>
-            </article>
-            <button></button>
+            </div>
         </section>
+
     </main>
-    <footer>
-        <div>
-            <form action="" method="POST">
-                <h2>ответим на любой вопрос</h2>
-                <img src="" alt="">
-                <div>
+    <footer class="footer">
+        <div class="wrapper-answer">
+            <form class="form" action="" method="POST">
+                <h2 class="form__title">ответим на любой вопрос</h2>
+                <img src="sourse/rhombus.svg" alt="rhombus">
+                <div class="wrapper-inputs">
                     <input type="name" placeholder="Name">
                     <input type="phonenubmer" placeholder="Phone">
                 </div>
-                <div>
-                    <textarea type="message" name="message" placeholder="questions about disign or smt else" row="5"
+                <div class="form__content">
+                    <textarea class="content__area" type="message" name="message" placeholder="questions about disign or smt else" row="5"
                         cols="33"></textarea>
-                    <ul>
-                        <li><a href="https://telegram.org/">telegram</a></li>
-                        <li><a href="https://www.youtube.com/">youtube</a></li>
-                        <li><a href="https://vk.com/">vk</a></li>
+                    <ul class="messangers__list">
+                        <li class="messangers__item">
+                            <a class="messangers__link" href="https://telegram.org/">telegram</a>
+                        </li>
+                        <li class="messangers__item">
+                            <a class="messangers__link" href="https://www.youtube.com/">youtube</a>
+                        </li>
+                        <li class="messangers__item">
+                            <a class="messangers__link" href="https://vk.com/">vk</a>
+                        </li>
                     </ul>
                 </div>
-                <div>
-                    <button>send</button>
-                    <div>
-                        <a href="location">Eu faucibus et rutrum fringilla orci nunc</a>
+                <div class="form__bottom">
+                    <input type="submit">send</input>
+                    <div class="form__info">
+                        <a class="addres" href="location">Eu faucibus et rutrum fringilla orci nunc</a>
                         <div>
-                            <a href="phone:88121234567">8 (812) 123-45-67</a>
-                            <a href="email:test@test.ru">test@test.ru</a>
+                            <a class="phone" href="phone:88121234567">8 (812) 123-45-67</a>
+                            <a class="email" href="email:test@test.ru">test@test.ru</a>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <p>2022 © Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.</p>
+        <p class="copyright">2022 © Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.</p>
     </footer>
 </body>
 
