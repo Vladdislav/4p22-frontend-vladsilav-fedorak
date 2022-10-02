@@ -1,12 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1276px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%),
+    url("../sourse/car-header.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: all 1s ease;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.logo {
+  margin-right: 80px;
+}
+.logo__link {
+  font-family: "Reforma-BoldC";
+  font-size: 24px;
+  line-height: 28px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__list:not(:first-child){
+    margin-left: 40px;
+}
 
 
+.menu__link {
+  font-family: "Reforma-MediumC";
+  font-size: 24px;
+  line-height: 28px;
+}
 
+.menu__burger {
+}
+.wrapper {
+}
+.headline__content {
+}
 
-
-
-
-
+.wrapper-info {
+}
+.title {
+}
+.header__bottom {
+}
+.wrapper-info__item {
+}
+.wrapper-info__title {
+}
+.addres {
+}
+.phone {
+}
+.working-interval {
+}
+.achievements {
+}
+.services {
+}
+.services__content {
+}
+.sercives__title {
+}
+.services__switcher {
+}
+.switcher-btn {
+}
+.switcher-btn--active {
+}
+.servises__card {
+}
+.card {
+}
+.card__content {
+}
+.card__img {
+}
+.card__title {
+}
+.card__desc {
+}
+.card__btn {
+}
+.btn {
+}
+.footer {
+}
+.wrapper-answer {
+}
+.form {
+}
+.form__title {
+}
+.wrapper-inputs {
+}
+.form__content {
+}
+.content__area {
+}
+.messangers__list {
+}
+.messangers__item {
+}
+.messangers__link {
+}
+.form__bottom {
+}
+.form__info {
+}
+.email {
+}
+.copyright {
+}
 
 .achievements {
-    display: none;
+  display: none;
 }

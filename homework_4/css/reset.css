@@ -23,6 +23,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 
 /* make sure to set some focus styles for accessibility */
 :focus {
