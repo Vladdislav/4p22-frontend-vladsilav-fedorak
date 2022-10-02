@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Reforma-MediumC';
+    src: url(../fonts/Reformagroteskmediumc.woff);
+}
+@font-face {
+    font-family: 'Reforma-DemiC';
+    src: url(../fonts/Reformagroteskdemic.woff);
+}
+@font-face {
+    font-family: 'Reforma-BoldC';
+    src: url(../fonts/Reformagroteskboldc.woff);
+}
