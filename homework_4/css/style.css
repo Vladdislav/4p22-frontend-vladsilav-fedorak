@@ -3,136 +3,420 @@
 }
 .container {
   max-width: 1276px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
 }
 
 .header {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%),
-    url("../sourse/car-header.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 1s ease;
+  background: rgba(20, 20, 20, 0.8);
+}
+.header--hidden {
+  transform: translateY(-100%);
+  transition: all 1s ease;
 }
 .menu {
-  position: fixed;
-  top: 0;
-  z-index: 1;
   transition: all 1s ease;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo {
   margin-right: 80px;
 }
 .logo__link {
   font-family: "Reforma-BoldC";
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 32px;
+  line-height: 36px;
+  color: #db3138;
 }
 .menu__list {
   display: flex;
   justify-content: space-between;
 }
-.menu__list:not(:first-child){
-    margin-left: 40px;
+.menu__item:not(:first-child) {
+  margin-left: 40px;
 }
-
 
 .menu__link {
   font-family: "Reforma-MediumC";
   font-size: 24px;
   line-height: 28px;
+  position: relative;
+}
+.menu__link:after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #db3138;
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  transition: width 0.4s ease-in-out;
+  transform: translateX(-50%);
+}
+.menu__link:hover:after,
+.menu__link:focus:after {
+  width: 100%;
+}
+.menu__burger {
+  margin-left: 20px;
+}
+.menu__burger:hover {
+  cursor: pointer;
+}
+.menu__burger span:not(:first-child) {
+  margin-top: 8px;
+}
+.menu__burger span {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: #db3138;
 }
 
-.menu__burger {
+.stick--active {
+  margin-left: 10px;
 }
+
+/* content */
 .wrapper {
+}
+.headline {
+  margin-top: -76px;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%),
+    url("../sourse/car-header.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .headline__content {
 }
 
-.wrapper-info {
+.headline-center {
+  text-align: center;
+}
+.rhombus {
+  margin: 40px 0;
+}
+.headline-center a {
+  margin-top: 40px;
 }
 .title {
+  font-family: "Reforma-BoldC";
+  font-size: 150px;
+  line-height: 154px;
+  padding-top: 237px;
+  color: #db3138;
 }
-.header__bottom {
+.sup-title {
+  color: white;
+  font-family: "Reforma-MediumC";
+  line-height: 44px;
+  font-size: 40px;
+  max-width: 437px;
+  margin: 0 auto;
 }
-.wrapper-info__item {
+.headline__footer {
+  margin-top: 106px;
 }
-.wrapper-info__title {
+.headline-bottom {
+  display: flex;
+  font-family: "Reforma-DemiC";
+  color: #db3138;
+}
+.headline-bottom__item {
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #898989;
+}
+.headline-bottom__item:first-child {
+  border-left: none;
+}
+.headline-bottom__item:last-child {
+  border-right: none;
+}
+.headline-bottom__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .addres {
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 28px;
+  display: block;
+  max-width: 265px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .phone {
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 28px;
+  display: block;
+  color: #db3138;
 }
 .working-interval {
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 28px;
+  display: block;
 }
+
 .achievements {
 }
+
 .services {
+  background-color: #141414;
 }
 .services__content {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.services__content .rhombus {
+  margin: 40px 0 60px 0;
 }
 .sercives__title {
+  font-family: "Reforma-DemiC";
+  font-size: 52px;
+  line-height: 56px;
+  padding-top: 90px;
 }
 .services__switcher {
+  display: flex;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: 0 auto;
 }
 .switcher-btn {
+  font-family: "Reforma-DemiC";
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  padding: 20px 40px;
+  transition: 0.5s ease-in-out;
+
+  text-transform: uppercase;
+}
+.switcher-btn:last-child {
+  margin-left: 60px;
 }
 .switcher-btn--active {
+  background: #db3138;
+  transition: 0.5s ease-in-out;
 }
 .servises__card {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 .card {
+  width: 306px;
+  min-height: 428px;
+  border: 1px solid #898989;
+  position: relative;
 }
 .card__content {
+  width: 100%;
 }
 .card__img {
+  margin: 80px auto 0 auto;
 }
 .card__title {
+  margin-top: 30px;
+  font-family: "Reforma-DemiC";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .card__desc {
+  margin: 20px auto 0 auto;
+  max-width: 226px;
+  width: 100%;
+  font-family: "Reforma-DemiC";
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-.card__btn {
+.card .card__btn {
+  position: absolute;
+  bottom: 50px;
+  left: calc((100% - 113px) / 2);
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .btn {
+  display: inline-block;
+  font-family: "Reforma-DemiC";
+  font-size: 24px;
+  line-height: 28px;
+  padding: 14px 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(219, 49, 56, 1) 60%,
+    rgba(0, 0, 0, 0) 40%
+  );
+  text-transform: uppercase;
 }
 .footer {
-}
-.wrapper-answer {
+  background-color: #141414;
 }
 .form {
+  color: white;
+  padding-top: 110px;
+  width: 636px;
+  text-align: center;
+  margin: 0 auto;
+}
+.form .rhombus {
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 .form__title {
+  font-family: "Reforma-DemiC";
+  font-size: 52px;
+  line-height: 56px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .wrapper-inputs {
+  display: flex;
 }
+.form__name {
+  width: 306px;
+  height: 47px;
+}
+.form__name::placeholder,
+.form__phonenumber::placeholder,
+.content__area::placeholder {
+  color: white;
+}
+.content__area::placeholder {
+  padding-top: 25px;
+}
+[placeholder] {
+  padding-left: 25px;
+  font-family: "Reforma-DemiC";
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #141414;
+  border: 1px solid #898989;
+  transition: 0.5s ease-in-out;
+}
+[placeholder]:focus {
+  border: 1px solid #db3138;
+  transition: 0.5s ease-in-out;
+}
+.form__phonenumber {
+  width: 306px;
+  margin-left: 24px;
+  height: 47px;
+}
+
 .form__content {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .content__area {
+  height: 150px;
+  width: 526px;
 }
 .messangers__list {
 }
-.messangers__item {
+.messangers__item:not(:first-child) {
+  margin-top: 15px;
 }
-.messangers__link {
-}
+
 .form__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+.submit {
+  border: none;
+  display: block;
+  height: 61px;
+  color: white;
 }
 .form__info {
+}
+.adres-footer {
+  font-family: "Reforma-DemiC";
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  max-width: 350px;
+}
+.phone-footer {
+  font-family: "Reforma-DemiC";
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+}
+.form__info-content {
+  font-family: "Reforma-DemiC";
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .email {
 }
 .copyright {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  color: #ffffff;
+  text-align: center;
+
+  opacity: 0.5;
+border-top: 1px solid #000;
+  font-size: 16px;
+  line-height: 22px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .achievements {

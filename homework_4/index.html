@@ -19,22 +19,22 @@
                     <a class="logo__link" href="#">Car Music</a>
                 </div>
                 <ul class="menu__list">
-                    <li claas="menu__item">
+                    <li class="menu__item">
                         <a class="menu__link" href="#">Главная</a>
                     </li>
-                    <li claas="menu__item">
+                    <li class="menu__item">
                         <a class="menu__link" href="#">Оклейка автомобилей</a>
                     </li>
-                    <li claas="menu__item">
+                    <li class="menu__item">
                         <a class="menu__link" href="#">Детейлинг автомобилей</a>
                     </li>
-                    <li claas="menu__item">
+                    <li class="menu__item">
                         <a class="menu__link" href="#">Галерея работ</a>
                     </li>
                 </ul>
                 <div class="menu__burger">
                     <span></span>
-                    <span></span>
+                    <span class="stick--active"></span>
                     <span></span>
                 </div>
             </nav>
@@ -46,27 +46,27 @@
         <section class="headline">
             <div class="container">
                 <div class="headline__content">
-                    <div class="wrapper-info">
+                    <div class="headline-center">
                         <h1 class="title">CAR MUSIC</h1>
-                        <img src="sourse/rhombus.svg" alt="four rhombus">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
-                        <a href="#">Наши услуги</a>
+                        <img class="rhombus" src="sourse/rhombus.svg" alt="four rhombus">
+                        <p class="sup-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
+                        <a class="btn" href="#">Наши услуги</a>
                     </div>
                 </div>
             </div>
-            <div class="headline__bottom">
-                <div class="wrapper-info">
-                    <div class="wrapper-info__item">
-                        <p class="wrapper-info__title">адрес:</p>
+            <div class="headline__footer">
+                <div class="headline-bottom">
+                    <div class="headline-bottom__item">
+                        <p class="headline-bottom__title">адрес:</p>
                         <p class="addres">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
-                    <div class="wrapper-info__item">
-                        <p class="wrapper-info__title">телефон:</p>
+                    <div class="headline-bottom__item">
+                        <p class="headline-bottom__title">телефон:</p>
                         <a class="phone" href="phone:88121234567">8 (812) 123-45-67</a>
                         <a class="phone" href="phone:89111234567">8-911-123-45-67</a>
                     </div>
-                    <div class="wrapper-info__item">
-                        <p class="wrapper-info__title">Режим работы:</p>
+                    <div class="headline-bottom__item">
+                        <p class="headline-bottom__title">Режим работы:</p>
                         <p class="working-interval">пн-пт : 10:00 - 20:00</p>
                         <p class="working-interval">сб-вск : 12:00 - 20:00</p>
                     </div>
@@ -126,6 +126,7 @@
             <div class="container">
                 <div class="services__content">
                     <h2 class="sercives__title">Наши услуги</h2>
+                    <img class="rhombus" src="sourse/rhombus.svg" alt="rhombus">
                     <div class="services__switcher">
                         <a href="#" class="switcher-btn switcher-btn--active">Оклейка</a>
                         <a href="#" class="switcher-btn">Детейлинг</a>
@@ -174,35 +175,41 @@
 
     </main>
     <footer class="footer">
-        <div class="wrapper-answer">
+        <div class="container">
             <form class="form" action="" method="POST">
                 <h2 class="form__title">ответим на любой вопрос</h2>
-                <img src="sourse/rhombus.svg" alt="rhombus">
+                <img class="rhombus" src="sourse/rhombus.svg" alt="rhombus">
                 <div class="wrapper-inputs">
-                    <input type="name" placeholder="Name">
-                    <input type="phonenubmer" placeholder="Phone">
+                    <input class="form__name" type="name" placeholder="Name">
+                    <input class="form__phonenumber" type="phonenumber" placeholder="Phone">
                 </div>
                 <div class="form__content">
                     <textarea class="content__area" type="message" name="message" placeholder="questions about disign or smt else" row="5"
                         cols="33"></textarea>
                     <ul class="messangers__list">
                         <li class="messangers__item">
-                            <a class="messangers__link" href="https://telegram.org/">telegram</a>
+                            <a class="messangers__link" href="https://telegram.org/">
+                                <img src="sourse/telegram.svg" alt="telegram">
+                            </a>
                         </li>
                         <li class="messangers__item">
-                            <a class="messangers__link" href="https://www.youtube.com/">youtube</a>
+                            <a class="messangers__link" href="https://www.youtube.com/">
+                                <img src="sourse/youtube.svg" alt="youtube">
+                            </a>
                         </li>
                         <li class="messangers__item">
-                            <a class="messangers__link" href="https://vk.com/">vk</a>
+                            <a class="messangers__link" href="https://vk.com/">
+                                <img src="sourse/vk.svg" alt="vk">
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="form__bottom">
-                    <input type="submit">send</input>
+                    <input class="btn submit" type="submit"></input>
                     <div class="form__info">
-                        <a class="addres" href="location">Eu faucibus et rutrum fringilla orci nunc</a>
-                        <div>
-                            <a class="phone" href="phone:88121234567">8 (812) 123-45-67</a>
+                        <a class="addres adres-footer" href="location">addres: Eu faucibus et rutrum fringilla orci nunc</a>
+                        <div class="form__info-content">
+                            <a class="phone phone-footer" href="phone:88121234567">8 (812) 123-45-67</a>
                             <a class="email" href="email:test@test.ru">test@test.ru</a>
                         </div>
                     </div>
@@ -211,6 +218,7 @@
         </div>
         <p class="copyright">2022 © Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.</p>
     </footer>
+    <script src="js/scrips.js"></script>
 </body>
 
 </html>
