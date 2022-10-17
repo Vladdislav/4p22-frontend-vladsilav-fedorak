@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Authorization - form</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="container-form">
+            <form class="authorization">
+                <legend class="authorization__title">вход</legend>
+                <label for="email" class="authorization__title-email">Email</label>
+                <input id="email" type="email" placeholder="johndoe@email.com" class="authorization__field-email input">
+                <label for="password" class="authorization__title-password">Пароль</label>
+                <input id="password" type="password" placeholder="введите пароль"
+                    class="authorization__field-password input">
+                <fieldset class="authorization__agreement">
+                    <input id="agreement" type="checkbox" class="authorization__ckeckbox-agreement">
+                    <label for="agreement" class="authorization__title-agreement">Я согласен получать обновления на
+                        почту</label>
+                </fieldset>
+                <input type="submit" class="authorization__send-btn" value="войти">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
