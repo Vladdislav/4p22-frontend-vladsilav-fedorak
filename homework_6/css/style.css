@@ -1,74 +1,74 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
+
 .header {
-    position: sticky;
-    left: 0;
-    top:0;
-    z-index: 9999;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 9999;
 }
 .header__container {
-    max-width: 100%;
-    width: 100%;
-    background-color:gray;
-    border-bottom: 4px solid black;
-    
+  max-width: 100%;
+  width: 100%;
+  background-color: gray;
+  border-bottom: 4px solid black;
 }
 .header__title {
-    align-items: center;
-    padding: 11px 0;
-    text-align: center;
+  align-items: center;
+  padding: 11px 0;
+  text-align: center;
 
-    color: black;
-    font-size: 50px;
+  color: black;
+  font-size: 50px;
 }
 .sidebar {
-    position: fixed;
-    z-index: 9998;
+  position: fixed;
+  z-index: 9998;
 }
 .sidebar-container {
-    background-color: rgb(48, 21, 21);
-    max-width: 300px;
-    min-width: 100px;
-    height: 100vh;
-    width: 100%;
+  background-color: rgb(48, 21, 21);
+  min-width: 250px;
+  height: 100vh;
+  width: 100%;
 }
 .sidebar__content {
-    padding: 30px;
-    text-align: center;
+  padding: 30px;
+  text-align: center;
+  position: relative;
 }
 .sidebar__list {
-
+    position: absolute;
 }
 .sidebar__item {
+    position: static;
 }
 .sidebar__link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .book {
 }
 .address-book__content {
-    margin-left: 250px;
+  margin-left: 250px;
 }
 .container-adress-book {
-    padding: 20px;
+  padding: 20px;
 }
 .address-book__item {
-    border: 1px solid black;
-   
+  border: 1px solid black;
 }
 .address-book__letter-of-alphabet {
-    padding-left: 20px;
-    margin-bottom: 20px;
-    position:sticky;
-    top:84px;
-    font-size: 24px;
-    background: olive;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 84px;
+  font-size: 24px;
+  background: olive;
 }
 .address-book__list {
 }
 .address-book__second-name {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
