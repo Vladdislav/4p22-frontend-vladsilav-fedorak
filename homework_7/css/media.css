@@ -1,4 +1,4 @@
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1441px) {
   .container-form {
     max-width: calc(600 / 1440 * 100vw);
     max-height: calc(412 / 1440 * 100vw);

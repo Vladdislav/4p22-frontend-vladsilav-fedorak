@@ -37,7 +37,7 @@
   width: 100%;
 }
 .authorization__title {
-  margin: 0 auto;
+  text-align: center;
   font-size: 50px;
   line-height: 50px;
   margin-top: 26px;
@@ -121,7 +121,6 @@ input[placeholder] {
   color: #787878;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 1px;
 }
 
 .authorization__send-btn {
