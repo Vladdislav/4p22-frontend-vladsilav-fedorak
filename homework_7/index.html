@@ -14,19 +14,20 @@
 <body>
     <main class="main">
         <div class="container-form">
-            <form class="authorization">
-                <legend class="authorization__title">вход</legend>
+            <form class="authorization" action="">
+                <legend class="authorization__title">Вход</legend>
                 <label for="email" class="authorization__title-email">Email</label>
-                <input id="email" type="email" placeholder="johndoe@email.com" class="authorization__field-email input">
+                <input id="email" type="email" placeholder="Введите Email"
+                    class="authorization__field-email authorization__input">
                 <label for="password" class="authorization__title-password">Пароль</label>
-                <input id="password" type="password" placeholder="введите пароль"
-                    class="authorization__field-password input">
+                <input id="password" type="password" placeholder="Введите пароль"
+                    class="authorization__field-password authorization__input">
                 <fieldset class="authorization__agreement">
                     <input id="agreement" type="checkbox" class="authorization__ckeckbox-agreement">
                     <label for="agreement" class="authorization__title-agreement">Я согласен получать обновления на
                         почту</label>
                 </fieldset>
-                <input type="submit" class="authorization__send-btn" value="войти">
+                <input type="submit" class="authorization__send-btn" value="Войти">
             </form>
         </div>
     </main>
