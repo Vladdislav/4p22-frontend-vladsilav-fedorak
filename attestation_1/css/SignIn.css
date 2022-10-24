@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: #787878;
+
+}
+li {
+    list-style: none;
+}
+.header {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__content-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.header__logo {
+    
+}
+.header__title {
+    margin-left: 30px;
+}
+.nav {
+    max-width: 245px;
+    width: 100%;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__item {
+}
+.nav__link {
+}
+.nav__link--current {
+    color: #1A226B;
+}
+.main {
+
+}
+.sign-in {
+}
+.container-form {
+}
+.authorization {
+}
+.authorization__title {
+}
+.authorization__title-email {
+}
+.authorization__field-email {
+}
+.authorization__input {
+}
+.authorization__title-password {
+}
+.authorization__field-password {
+}
+.authorization__send-btn {
+}
