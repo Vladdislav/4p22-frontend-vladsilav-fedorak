@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <form class="calculator" onsubmit="return false;">
+                <h1 class="calculator__title">Калькулятор</h1>
+                <label for="first-number" class="calculator__label-number">Первое число</label>
+                <input type="text" value="" id="first-number" placeholder="Введите первое число" class="calculator__number">
+                <label for="operator" class="calculator__label-operator">Операция</label>
+                <input type="text" value="" placeholder="Введите операцию" id="operator" class="calculator__operator">
+                <label for="second-number" class="calculator__label-number">Второе число</label>
+                <input type="text" value="" placeholder="Введите второе число" id="second-number" class="calculator__number">
+                <input id="submit" type="submit" value="Вычислить" class="calculator__btn">
+            </form>
+        </div>
+    </main>
+</body>
+<script src="js/script.js"></script>
+
+</html>
