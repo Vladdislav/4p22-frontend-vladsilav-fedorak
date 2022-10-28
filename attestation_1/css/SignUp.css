@@ -186,9 +186,8 @@ li {
   opacity: 0;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-43%, -31%);
+  top: 4px;
+  left: 4px;
   width: 14px;
   height: 14px;
   transition: 0.2s;
@@ -277,9 +276,8 @@ li {
   opacity: 0;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-43%, -31%);
+  top: 5px;
+  left: 5px;
   width: 12px;
   height: 12px;
   transition: 0.2s;

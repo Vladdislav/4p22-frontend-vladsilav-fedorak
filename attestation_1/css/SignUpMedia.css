@@ -91,6 +91,8 @@
     border: calc(2 / 1440 * 100vw) solid #787878;
   }
   .fake-radio:after {
+    top: calc(4 / 1440 * 100vw);
+    left: calc(4 / 1440 * 100vw);
     width: calc(14 / 1440 * 100vw);
     height: calc(14 / 1440 * 100vw);
   }
@@ -142,6 +144,8 @@
     border: calc(2 / 1440 * 100vw) solid #787878;
   }
   .fake-checkbox::after {
+    top: calc(5 / 1440 * 100vw);
+    left: calc(5 / 1440 * 100vw);
     width: calc(12 / 1440 * 100vw);
     height: calc(12 / 1440 * 100vw);
   }
@@ -260,8 +264,8 @@
     border: calc(2 / 768 * 100vw) solid #787878;
   }
   .fake-radio:after {
-    transform: translate(-50%, -29%);
-
+    top: calc(4 / 768 * 100vw);
+    left: calc(3 / 768 * 100vw);
     width: calc(14 / 768 * 100vw);
     height: calc(14 / 768 * 100vw);
   }
@@ -310,6 +314,8 @@
     border: calc(2 / 768 * 100vw) solid #787878;
   }
   .fake-checkbox::after {
+    top: calc(5 / 768 * 100vw);
+    left: calc(5 / 768 * 100vw);
     width: calc(12 / 768 * 100vw);
     height: calc(12 / 768 * 100vw);
   }
@@ -329,5 +335,15 @@
     width: calc(180 / 768 * 100vw);
     font-size: calc(24 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
+  }
+}
+@media screen and (max-width: 320px) {
+  .fake-checkbox::before{
+    width: calc(7 / 320 * 100vw);
+    height: calc(7 / 320 * 100vw);
+  }
+    .fake-checkbox::after {
+    top: calc(2 / 320 * 100vw);
+    left: calc(2 / 320 * 100vw);
   }
 }
