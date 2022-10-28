@@ -13,7 +13,7 @@
   .header__logo {
     width: calc(222 / 1440 * 100vw);
     height: calc(50 / 1440 * 100vw);
-}
+  }
   .header__title {
     margin-left: calc(30 / 1440 * 100vw);
     font-size: calc(36 / 1440 * 100vw);
@@ -65,95 +65,102 @@
   .authorization__title-password {
     margin-top: calc(11 / 1440 * 100vw);
     margin-left: calc(8 / 1440 * 100vw);
+    font-size: calc(16 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
   }
-  .authorization__send-btn {
-  margin-top: calc(52 / 1440 * 100vw);
-  margin-bottom: calc(37 / 1440 * 100vw);
-  height: calc(52 / 1440 * 100vw);
-  width: calc(180 / 1440 * 100vw);
-  font-size: calc(24 / 1440 * 100vw);
-  line-height: calc(16 / 1440 * 100vw);
+  .send-btn {
+    margin-top: calc(52 / 1440 * 100vw);
+    margin-bottom: calc(37 / 1440 * 100vw);
+    height: calc(52 / 1440 * 100vw);
+    width: calc(180 / 1440 * 100vw);
+    font-size: calc(24 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
   }
 }
 @media screen and (max-width: 768px) {
-    .header {
-      box-shadow: 0px calc(4 / 768 * 100vw) calc(4 / 768 * 100vw)
-        rgba(0, 0, 0, 0.25);
-    }
-    .container {
-      height: calc(80 / 768 * 100vw);
-    }
-    .header__content-left {
-      padding-top: calc(0 / 768 * 100vw);
-      padding-bottom: calc(3 / 768 * 100vw);
-      padding-left: calc(20 / 768 * 100vw);
-    }
-    .header__logo {
-      width: calc(124 / 768 * 100vw);
-      height: calc(25 / 768 * 100vw);
+  .header {
+    box-shadow: 0px calc(4 / 768 * 100vw) calc(4 / 768 * 100vw)
+      rgba(0, 0, 0, 0.25);
   }
-    .header__title {
-      margin-left: calc(34 / 768 * 100vw);
-      font-size: calc(24 / 768 * 100vw);
-      line-height: calc(29 / 768 * 100vw);
-    }
-    .nav {
-      padding-right: calc(28 / 768 * 100vw);
-    }
-    .nav__item:last-child {
-      margin-left: calc(36 / 768 * 100vw);
-    }
-    .nav__link {
-      font-size: calc(16 / 768 * 100vw);
-      line-height: calc(19 / 768 * 100vw);
-    }
-    .main {
-        display: block;
-        margin-top: 160px;
-    }
-    .container-form {
-      max-width: calc(600 / 768 * 100vw);
-      padding: 0 calc(46 / 768 * 100vw) 0 calc(45 / 768 * 100vw);
-      box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw)
-        rgba(0, 0, 0, 0.25);
-    }
-  
-    .authorization__title {
-      font-size: calc(50 / 768 * 100vw);
-      line-height: calc(50 / 768 * 100vw);
-  
-      margin-top: calc(26 / 768 * 100vw);
-    }
-    .authorization__title-email {
-      font-size: calc(16 / 768 * 100vw);
-      line-height: calc(16 / 768 * 100vw);
-      margin-left: calc(8 / 768 * 100vw);
-      margin-top: calc(17 / 768 * 100vw);
-    }
-  
-    .authorization__input {
-      height: calc(49 / 768 * 100vw);
-      margin-top: calc(3 / 768 * 100vw);
-      max-width: calc(509 / 768 * 100vw);
-      border: calc(2 / 768 * 100vw) solid #787878;
-    }
-    .authorization__input[placeholder] {
-      font-size: calc(28 / 768 * 100vw);
-      line-height: calc(36 / 768 * 100vw);
-      padding-top: calc(7 / 768 * 100vw);
-      padding-bottom: calc(3 / 768 * 100vw);
-      padding-left: calc(13 / 768 * 100vw);
-    }
-    .authorization__title-password {
-      margin-top: calc(11 / 768 * 100vw);
-      margin-left: calc(8 / 768 * 100vw);
-    }
-    .authorization__send-btn {
+  .container {
+    height: calc(80 / 768 * 100vw);
+  }
+  .header__content-left {
+    padding-top: calc(0 / 768 * 100vw);
+    padding-bottom: calc(3 / 768 * 100vw);
+    padding-left: calc(20 / 768 * 100vw);
+  }
+  .header__logo {
+    width: calc(124 / 768 * 100vw);
+    height: calc(25 / 768 * 100vw);
+  }
+  .header__title {
+    margin-left: calc(34 / 768 * 100vw);
+    font-size: calc(24 / 768 * 100vw);
+    line-height: calc(29 / 768 * 100vw);
+  }
+  .nav {
+    padding-right: calc(28 / 768 * 100vw);
+  }
+  .nav__item:last-child {
+    margin-left: calc(36 / 768 * 100vw);
+  }
+  .nav__link {
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(19 / 768 * 100vw);
+  }
+  .main {
+    display: block;
+    margin-top: 160px;
+  }
+  .container-form {
+    max-width: calc(600 / 768 * 100vw);
+    padding: 0 calc(46 / 768 * 100vw) 0 calc(45 / 768 * 100vw);
+    box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw)
+      rgba(0, 0, 0, 0.25);
+  }
+
+  .authorization__title {
+    font-size: calc(50 / 768 * 100vw);
+    line-height: calc(50 / 768 * 100vw);
+
+    margin-top: calc(26 / 768 * 100vw);
+  }
+  .authorization__title-email {
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
+    margin-left: calc(8 / 768 * 100vw);
+    margin-top: calc(17 / 768 * 100vw);
+  }
+
+  .authorization__input {
+    height: calc(49 / 768 * 100vw);
+    margin-top: calc(3 / 768 * 100vw);
+    max-width: calc(509 / 768 * 100vw);
+    border: calc(2 / 768 * 100vw) solid #787878;
+  }
+  .authorization__field-password{
+    margin-top: calc(5 / 768 * 100vw);
+  }
+  .authorization__input[placeholder] {
+    font-size: calc(28 / 768 * 100vw);
+    line-height: calc(36 / 768 * 100vw);
+    padding-top: calc(7 / 768 * 100vw);
+    padding-bottom: calc(3 / 768 * 100vw);
+    padding-left: calc(13 / 768 * 100vw);
+  }
+  .authorization__title-password {
+    margin-top: calc(11 / 768 * 100vw);
+    margin-left: calc(8 / 768 * 100vw);
+    font-size: calc(16 / 768 * 100vw);;
+  line-height: calc(16 / 768 * 100vw);
+  }
+  .send-btn {
     margin-top: calc(52 / 768 * 100vw);
     margin-bottom: calc(37 / 768 * 100vw);
     height: calc(52 / 768 * 100vw);
     width: calc(180 / 768 * 100vw);
     font-size: calc(24 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
-    }
   }
+}

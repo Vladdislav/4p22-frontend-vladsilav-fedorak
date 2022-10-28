@@ -160,12 +160,7 @@ li {
   font-size: 14px;
   line-height: 16px;
 }
-
-.registration__title-radio:first-child {
-  margin-top: 0;
-}
 .registration__radio-gender {
-  /* position: relative; */
   display: none;
 }
 .fake-radio {
@@ -312,7 +307,7 @@ li {
   line-height: 16px;
 }
 
-.send-btn {
+.send-btn { 
   margin: 0 auto;
   margin-top: 59px;
   margin-bottom: 37px;
