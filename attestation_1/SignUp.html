@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/SignUp.css">
+    <link rel="stylesheet" href="css/SignUpMedia.css">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content-left">
+                <img class="header__logo" src="../attestation_1/src/1280px-IU_logo.png" alt="Innopolis University">
+                <h1 class="header__title">PCS Frontend</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="SignUp.html" class="nav__link nav__link--current">Регистрация</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="SignIn.html" class="nav__link">Вход</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="sign-up">
+            <div class="container-form">
+                <form action="" class="registration">
+                    <legend class="registration__title">Регистрация</legend>
+                    <label for="email" class="registration__title-email">Email</label>
+                    <input id="email" type="email" placeholder="Введите Email"
+                        class="registration__field-email registration__input">
+                    <label for="password" class="registration__title-password">Пароль</label>
+                    <input id="password" type="password" placeholder="Введите пароль"
+                        class="registration__field-password registration__input">
+                    <label for="password-confirm" class="registration__title-password">Подтверждение пароля</label>
+                    <input id="password-confirm" type="password" placeholder="Подтвердите пароль"
+                        class="registration__field-password registration__input">
+                    <p class="registration__title-gender">Пол</p>
+                    <fieldset class="registration__gender">
+
+                        <label for="gender-man" class="registration__title-radio">
+                            <input id="gender-man" type="radio" name="gender" class="registration__radio-gender">
+                            <span class="fake-radio"></span>
+                            <span class="registration__title-man gender">Мужчина</span>
+                        </label>
+
+                    </fieldset>
+                    <fieldset class="registration__gender woman">
+                        <label for="gender-woman" class="registration__title-radio">
+                            <input id="gender-woman" type="radio" name="gender" class="registration__radio-gender">
+                            <span class="fake-radio"></span>
+                            <span class="registration__title-woman gender">Женщина</span>
+                        </label>
+                    </fieldset>
+
+                    <label for="about-myself" class="registration__title-about">О себе</label>
+                    <textarea name="about-myself" id="about-myself" placeholder="Расскажите о себе..."
+                        class="registration__area-about"></textarea>
+
+                    <fieldset class="registration__agreement">
+
+                        <label for="agreement" class="registration__title-agreement">
+                            <input id="agreement" type="checkbox" class="registration__ckeckbox-agreement">
+                            <span class="fake-checkbox"></span>
+                            <span class="registration__text-agreement">Я согласен получать обновления на
+                                почту</span>
+                        </label>
+                    </fieldset>
+
+                    <input type="submit" class="send-btn" value="Регистрация">
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
