@@ -11,16 +11,16 @@ const secondNumber = document.getElementById('second-number').value.trim();
 
 
     if(firstNumber === ''){
-        console.log('Первое число не указано');
+        return console.log('Первое число не указано');
     }
     else if (isNaN(firstNumber)){
-        console.log('Некорректный ввод чисел')
+        return console.log('Некорректный ввод чисел')
     }
     if(secondNumber === ''){
-        console.log('Второе число не указаано');
+        return console.log('Второе число не указаано');
     }
     else if (isNaN(secondNumber)){
-        console.log('Некорректный ввод чисел')
+        return console.log('Некорректный ввод чисел')
     }
     
     
@@ -50,9 +50,9 @@ const secondNumber = document.getElementById('second-number').value.trim();
     
     }
     if(isNaN(result) || !isFinite(result)){
-        console.log('Операция не корректна');
+        return console.log('Операция не корректна');
     }
     else {
-        console.log(result);
+        return console.log(result);
     }
 });
