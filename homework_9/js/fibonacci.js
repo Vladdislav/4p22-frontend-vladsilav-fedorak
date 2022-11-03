@@ -32,7 +32,7 @@ fibonacci1();
 fibonacci1();
 fibonacci1();
 
-console.log(); // отступ между выводом двух вариантов
+console.log('--------------------'); // отступ между выводом двух вариантов
 
 const fibonacci = (() => {
   let fibPrev = 0;
