@@ -1,16 +1,61 @@
 "use strict";
-fetch("https://reqres.in/api/users.json")
+
+let requestURL = "https://reqres.in/api/users";
+fetch(requestURL)
   .then((responce) => responce.json())
   .then((data) => {
+    let dataUser = data.data;
+
     console.log("----------Пункт 1---------");
-    data.data.forEach((user) => {
-        console.log(data);
-      console.log(user);
+    dataUser.forEach((user) => {
       console.log(
-        `id:${user.id}, email:${user.name}, first name:${user.year}, last name:${user.last_name}, avatar:${user.avatar}\n`
+        `id: ${user.id}, email: ${user.email}, first name: ${user.first_name}, last name: ${user.last_name}, avatar: ${user.avatar}\n`
       );
     });
+
+    console.log("----------Пункт 2---------");
+    dataUser.forEach((user) => {
+      console.log(`last name: ${user.last_name}`);
+    });
+
+    console.log("----------Пункт 3---------");
+    let letterFilter = "F";
+    let lastNameFiltered = dataUser.reduce((acc, item, index, array) => {
+      dataUser.filter((userLastName) => {
+        if (userLastName[0] === letterFilter) {
+          if (index === array.length - 1) {
+            acc += item.last_name + ".";
+          } else {
+            acc += item.last_name + ", ";
+          }
+        }
+      });
+    }, "");
+    if (lastNameFiltered === "" || lastNameFiltered === undefined) {
+      console.log(`Пользователи на букву: ${letterFilter} не найдено`);
+    } else {
+      console.log(lastNameFiltered);
+    }
+
+    console.log("----------Пункт 4---------");
+    let dbUsers = dataUser.reduce((acc, item, index, array) => {
+      if (index === array.length - 1) {
+        acc += item.first_name + " " + item.last_name + ".";
+      } else {
+        acc += item.first_name + " " + item.last_name + ", ";
+      }
+      return acc;
+    }, "Наша база содержит данные следующих пользователей: ");
+    console.log(dbUsers);
+
+    console.log("----------Пункт 5---------");
+    let userKeys = Object.keys(dataUser[1]);
+    for(let i = 0; i < userKeys.length; i++) {
+      console.log(userKeys[i]);
+    }
+    
   })
+
   .catch((error) => {
     console.log(error);
   });
