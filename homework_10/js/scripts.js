@@ -1,6 +1,6 @@
 "use strict";
 
-let requestURL = "https://reqres.in/api/users";
+let requestURL = "https://reqres.in/api/users?per_page=12";
 fetch(requestURL)
   .then((responce) => responce.json())
   .then((data) => {
@@ -20,21 +20,24 @@ fetch(requestURL)
 
     console.log("----------Пункт 3---------");
     let letterFilter = "F";
-    let lastNameFiltered = dataUser.reduce((acc, item, index, array) => {
-      dataUser.filter((userLastName) => {
-        if (userLastName[0] === letterFilter) {
-          if (index === array.length - 1) {
-            acc += item.last_name + ".";
-          } else {
-            acc += item.last_name + ", ";
-          }
-        }
-      });
-    }, "");
-    if (lastNameFiltered === "" || lastNameFiltered === undefined) {
+    let lastNameFiltered = dataUser.filter(
+      (item) => item.last_name[0] === letterFilter
+    );
+
+    let lastNameFilteredString = "";
+    lastNameFiltered.forEach((item, index, array) => {
+      if (index === array.length - 1) {
+        lastNameFilteredString += item.last_name + ".";
+      } else {
+        lastNameFilteredString += item.last_name + ", ";
+      }
+      return lastNameFilteredString;
+    });
+
+    if (lastNameFilteredString === "" || lastNameFilteredString === undefined) {
       console.log(`Пользователи на букву: ${letterFilter} не найдено`);
     } else {
-      console.log(lastNameFiltered);
+      console.log(lastNameFilteredString);
     }
 
     console.log("----------Пункт 4---------");
@@ -50,10 +53,9 @@ fetch(requestURL)
 
     console.log("----------Пункт 5---------");
     let userKeys = Object.keys(dataUser[1]);
-    for(let i = 0; i < userKeys.length; i++) {
+    for (let i = 0; i < userKeys.length; i++) {
       console.log(userKeys[i]);
     }
-    
   })
 
   .catch((error) => {
